@@ -17,7 +17,6 @@ async function getSingleMeal(e) {
     const data = await res.json();
     if (data.meals !== null) {
       const meal = data.meals;
-      console.log(meal);
       searchTitle.style.display = "initial";
       search.innerHTML = input;
       displayData.innerHTML = meal
@@ -25,7 +24,7 @@ async function getSingleMeal(e) {
           meal => `
             <div class="meal">
               <img src="${meal.strMealThumb}" alt="">
-              <div class="meal-info" data-mealID="${meal.idMeal}">
+              <div class="meal-info btn-scroll" data-mealID="${meal.idMeal}">
                 <h3>${meal.strMeal}</h3>
               </div>
             </div>`
@@ -65,7 +64,6 @@ async function getMealId(mealID) {
   const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`);
   const data = await res.json();
   const meal = data.meals[0];
-  // console.log(meal);
   displayMealInfo(meal);
 }
 async function getRandomMeal(e) {
@@ -78,9 +76,9 @@ async function getRandomMeal(e) {
   searchTitle.style.display = "initial";
   searchTitle.innerHTML = "Random meal results";
   displayData.innerHTML = `
-  <div class="meal">
+  <div class="meal ">
     <img src="${meal.strMealThumb}" alt="">
-    <div class="meal-info" data-mealID="${meal.idMeal}">
+    <div class="meal-info btn-scroll" data-mealID="${meal.idMeal}">
       <h3>${meal.strMeal}</h3>
     </div>
   </div>`;
@@ -98,7 +96,6 @@ function getMealInfo(e) {
 
   if (info) {
     const mealID = info.getAttribute("data-mealID");
-    // console.log(mealID);
     getMealId(mealID);
   }
 }

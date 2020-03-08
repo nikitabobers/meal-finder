@@ -36,6 +36,10 @@
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
   }
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #999;
+  }
   .search-input input {
     padding: 0.5rem 0.2rem;
     width: 300px;
@@ -98,5 +102,9 @@
     .meal:hover .meal-info {
       opacity: 1;
     }
+
+    // &-info{
+
+    // }
   }
 }
