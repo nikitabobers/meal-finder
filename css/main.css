@@ -102,3 +102,22 @@ body,
     background: rgba(0, 0, 0, 0.5); }
   .result .result-data .meal:hover .meal-info {
     opacity: 1; }
+  .result .result-data-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin: 3rem auto; }
+    .result .result-data-info .text-info {
+      display: flex;
+      justify-content: space-around; }
+    .result .result-data-info .window-1 {
+      font-size: 0.9rem;
+      width: 70%; }
+    .result .result-data-info .window-2 {
+      padding-left: 2rem; }
+      .result .result-data-info .window-2 ul {
+        margin-top: 1rem;
+        list-style: none; }
+    .result .result-data-info iframe {
+      margin: auto;
+      margin-top: 2rem; }

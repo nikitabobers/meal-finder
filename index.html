@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/0634e71a94.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Meal list</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="search">
-        <h1>Find meal</h1>
-        <div class="search-input flex">
-          <form class="flex" id="form-submit">
-            <input type="text" id="input-value" placeholder="What you are looking for?" />
-            <button type="submit" class="btn" id="search"><i class="fas fa-search"></i></button>
-          </form>
-          <button class="btn" id="random"><i class="fas fa-random"></i></button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/0634e71a94.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Meal list</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="search">
+                <h1>Find meal</h1>
+                <div class="search-input flex">
+                    <form class="flex" id="form-submit">
+                        <input type="text" id="input-value" placeholder="What you are looking for?" />
+                        <button type="submit" class="btn" id="search"><i class="fas fa-search"></i></button>
+                    </form>
+                    <button class="btn" id="random"><i class="fas fa-random"></i></button>
+                </div>
+            </div>
+            <div class="result">
+                <div class="result-title">
+                    <h2 class="result-search-title">Search results for '<span id="result-search"></span>'</h2>
+                </div>
+                <a href="#result-info" class="result-data"></a>
+                <div class="result-data-info" id="result-info"></div>
+            </div>
         </div>
-      </div>
-      <div class="result">
-        <div class="result-title">
-          <h2 class="result-search-title">Search results for '<span id="result-search"></span>'</h2>
-        </div>
-        <div class="result-data"></div>
-        <div class="result-data-info" id="result-info"></div>
-      </div>
-    </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-    <script src="./scroll.js"></script>
-  </body>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./scroll.js"></script>
+        <script src="./script.js"></script>
+    </body>
 </html>
