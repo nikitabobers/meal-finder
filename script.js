@@ -82,7 +82,6 @@ async function getRandomMeal(e) {
     const res = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
     const data = await res.json();
     const meal = data.meals[0];
-    console.log(meal);
     searchTitle.style.display = "initial";
     searchTitle.innerHTML = "Random meal results";
     displayData.innerHTML = `

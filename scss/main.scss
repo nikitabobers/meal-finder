@@ -111,23 +111,29 @@
             .text-info {
                 display: flex;
                 justify-content: space-around;
+                border-bottom: 1px solid #e7e7e7;
+                padding-bottom: 0.5rem;
             }
             .window-1 {
                 font-size: 0.9rem;
-                width: 70%;
+                // width: 70%;
+                padding-right: 1rem;
             }
             .window-2 {
-                .meal-description-box {
-                }
-                padding-left: 2rem;
+                min-width: 200px;
+                padding-left: 1rem;
                 ul {
-                    margin-top: 1rem;
+                    padding-top: 0.5rem;
                     list-style: none;
+                }
+                .meal-description-box {
+                    padding-bottom: 0.5rem;
+                    border-bottom: 1px solid #e7e7e7;
                 }
             }
             iframe {
                 margin: auto;
-                margin-top: 2rem;
+                margin-top: 1rem;
             }
         }
     }
